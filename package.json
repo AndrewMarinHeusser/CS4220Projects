@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "package": "^1.0.1",
+    "prompts": "^2.4.2",
+    "superagent": "^8.0.9",
+    "yargs": "^17.7.1"
+  },
+  "name": "4220-midterm",
+  "version": "1.0.0",
+  "description": "4220 Midterm - Hyrule Compendium CLI ",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
