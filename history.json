@@ -34,5 +34,24 @@
           "id": 387,
           "image": "https://botw-compendium.herokuapp.com/api/v2/entry/ore_deposit/image",
           "name": "ore deposit"
+     },
+     {
+          "category": "monsters",
+          "common_locations": null,
+          "description": "These Lizalfos have been influenced by Ganon's fiendish magic to become the strongest Lizalfos of all. They're called \"silver\" for their unique coloring and also to denote their rarity. Their purple pattern makes them even more distinct.",
+          "drops": [
+               "lizalfos horn",
+               "lizalfos talon",
+               "lizalfos tail",
+               "amber",
+               "opal",
+               "topaz",
+               "ruby",
+               "sapphire",
+               "diamond"
+          ],
+          "id": 120,
+          "image": "https://botw-compendium.herokuapp.com/api/v2/entry/silver_lizalfos/image",
+          "name": "silver lizalfos"
      }
 ]
