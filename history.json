@@ -1,0 +1,38 @@
+[
+     {
+          "input": {
+               "category": "treasure",
+               "common_locations": [
+                    "Greater Hyrule"
+               ],
+               "description": "This deposit contains quite a bit of luminous stone. Crack it open to get at the easily process rocks within.",
+               "drops": [
+                    "luminous",
+                    "flint"
+               ],
+               "id": 389,
+               "image": "https://botw-compendium.herokuapp.com/api/v2/entry/luminous_ore_deposit/image",
+               "name": "luminous ore deposit"
+          }
+     },
+     {
+          "category": "treasure",
+          "common_locations": [
+               "Greater Hyrule"
+          ],
+          "description": "This deposit contains a good deal of ore. Breaking the rock will yield rock salt, flint, and other minerals of varying value.",
+          "drops": [
+               "ruby",
+               "diamond",
+               "amber",
+               "sapphire",
+               "topaz",
+               "opal",
+               "rock salt",
+               "flint"
+          ],
+          "id": 387,
+          "image": "https://botw-compendium.herokuapp.com/api/v2/entry/ore_deposit/image",
+          "name": "ore deposit"
+     }
+]

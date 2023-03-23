@@ -1,6 +1,6 @@
 const prompts = require('prompts');
 const api = require('./api.js');
-
+const hist = require('./history.js');
 const searchCategory = async (args) => {
     console.log("args", args);
     //returns an object consisting of every item in a specific category
@@ -8,14 +8,14 @@ const searchCategory = async (args) => {
     
     //returns a list of indeces selected by the user from the result of the categorical search
     const selections = await selectEntry(result);
-
+    
     //loop through the selected objects
     for(const i in selections['entries'])
     {
         //use the index from selectEntry to find information about the selected entries from the result of 
         //the categorical search
-        const currentEntry = result['data'][selections['entries'][i]]
-
+        const currentEntry = result['data'][selections['entries'][i]];
+        hist.writeFunc(currentEntry);
         //loops through all the keys of each object to print out in a cleaner fashion than a blob of json 
         for(const [key, value] of Object.entries(currentEntry))
         {
@@ -27,6 +27,7 @@ const searchCategory = async (args) => {
     }
     
 }
+
 
 //search for a specific entry, no prompt required on this one
 const searchEntry = async (args) => {
@@ -79,3 +80,5 @@ module.exports = {
     selectEntry,
     displayCategory
 };
+
+
