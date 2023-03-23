@@ -53,5 +53,48 @@
           "id": 120,
           "image": "https://botw-compendium.herokuapp.com/api/v2/entry/silver_lizalfos/image",
           "name": "silver lizalfos"
+     },
+     {
+          "category": "monsters",
+          "common_locations": [
+               "Hyrule Field"
+          ],
+          "description": "The Sheikah of ancient Hyrule developed this as a weapon to combat Ganon. Its six legs give it extraordinary mobility compared to most current vehicles, and its powerful laser provides far greater offensive capability than conventional weaponry. Destroying the legs severely reduces its mobility.",
+          "drops": [
+               "ancient screw",
+               "ancient spring",
+               "ancient gear",
+               "ancient shaft",
+               "ancient core",
+               "giant ancient core"
+          ],
+          "id": 125,
+          "image": "https://botw-compendium.herokuapp.com/api/v2/entry/guardian_stalker/image",
+          "name": "guardian stalker"
+     },
+     {
+          "category": "monsters",
+          "common_locations": [
+               "Eldin Canyon",
+               "Gerudo Highlands"
+          ],
+          "description": "This octopus-like species of monster lives in volcanic regions. When they inhale, they're preparing to spit out flaming rocks but have been known to suck up weapons or bombs in the same breath.",
+          "drops": [
+               "octorok tentacle",
+               "octo balloon",
+               "octorok eyeball"
+          ],
+          "id": 94,
+          "image": "https://botw-compendium.herokuapp.com/api/v2/entry/rock_octorok/image",
+          "name": "rock octorok"
+     },
+     {
+          "category": "monsters",
+          "common_locations": null,
+          "description": "The Malice has given these Bokoblin skulls a sort of life. Devoid of any intelligence the Bokoblin it once belonged to may have had, these pitiful things now exist only to attack anything that gets too close.",
+          "drops": [],
+          "id": 156,
+          "image": "https://botw-compendium.herokuapp.com/api/v2/entry/cursed_bokoblin/image",
+          "name": "cursed bokoblin"
      }
 ]
