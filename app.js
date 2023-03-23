@@ -32,6 +32,7 @@ const searchCategory = async (args) => {
 const searchEntry = async (args) => {
     console.log("args", args);
     const result  = await api.getEntry(args.entry);
+    console.log(result);
     return result;
 }
 
