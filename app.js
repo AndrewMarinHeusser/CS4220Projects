@@ -35,7 +35,7 @@ const searchCategory = async (args) => {
         console.log('\n')
     }
     
-    const historyArr = {"Number of results" : selections['entries'].length, "Search Date": dateObj, "Results": selectionList};
+    const historyArr = {"resultCount" : selections['entries'].length,  "search": selectionList, "Search Date": dateObj};
     hist.writeFunc(historyArr);
 }
 
@@ -49,7 +49,7 @@ const searchEntry = async (args) => {
         "Category" : result['data']['category'],
         "id" : result['data']['id']
     }];
-    const historyArr = {"Number of results" : 1, "Search Date": dateObj, "Results": historyEntry};
+    const historyArr = {"resultCount" : 1,"search": historyEntry,"Search Date": dateObj};
     hist.writeFunc(historyArr);
     console.log(result);
     return result;

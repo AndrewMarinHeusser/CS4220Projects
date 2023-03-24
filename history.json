@@ -1,29 +1,23 @@
 [
      {
-          "Number of results": 1,
-          "Date": "2/23, 19:10",
-          "Results": [
+          "resultCount": 3,
+          "search": [
                {
-                    "name": "moblin",
+                    "name": "thunderblight ganon",
                     "Category": "monsters",
-                    "id": 108
-               }
-          ]
-     },
-     {
-          "Number of results": 2,
-          "Date": "2/23, 19:10",
-          "Results": [
-               {
-                    "name": "rock octorok",
-                    "Category": "monsters",
-                    "id": 94
+                    "id": 159
                },
                {
-                    "name": "moblin",
+                    "name": "guardian stalker",
                     "Category": "monsters",
-                    "id": 108
+                    "id": 125
+               },
+               {
+                    "name": "naydra",
+                    "Category": "monsters",
+                    "id": 154
                }
-          ]
+          ],
+          "Search Date": "2/23, 19:15"
      }
 ]
