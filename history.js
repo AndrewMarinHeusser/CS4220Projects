@@ -3,7 +3,8 @@ const fs = require('fs');
 const writeFunc = async (input) => {
   const filePath = './history.json';
   const newData = input;
-  
+  if(!fs.existsSync(filePath))
+    fs.writeFile(filePath, "{}", {flag: 'wx'}, err => {console.log(err)});
 
   fs.readFile(filePath, 'utf8', (err, data) => {
     if (err) throw err;
