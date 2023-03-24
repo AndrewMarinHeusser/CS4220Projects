@@ -1,6 +1,10 @@
 const prompts = require('prompts');
 const api = require('./api.js');
 const hist = require('./history.js');
+const date = new Date();
+const dateObj = `${date.getMonth()}/${date.getDate()}, ${date.getHours()}:${date.getMinutes()}`;
+
+
 const searchCategory = async (args) => {
     console.log("args", args);
     //returns an object consisting of every item in a specific category
@@ -8,14 +12,18 @@ const searchCategory = async (args) => {
     
     //returns a list of indeces selected by the user from the result of the categorical search
     const selections = await selectEntry(result);
-    
+    const selectionList = [];
     //loop through the selected objects
     for(const i in selections['entries'])
     {
         //use the index from selectEntry to find information about the selected entries from the result of 
         //the categorical search
         const currentEntry = result['data'][selections['entries'][i]];
-        hist.writeFunc(currentEntry);
+        const historyEntry = {
+            "name" : currentEntry['name'],
+            "Category" : currentEntry['category'],
+            "id" : currentEntry['id']
+        }
         //loops through all the keys of each object to print out in a cleaner fashion than a blob of json 
         for(const [key, value] of Object.entries(currentEntry))
         {
@@ -23,9 +31,12 @@ const searchCategory = async (args) => {
             if(key !== 'image')
                 console.log(`${key}: ${value}`);
         }
+        selectionList.push(historyEntry);
         console.log('\n')
     }
     
+    const historyArr = {"Number of results" : selections['entries'].length, "Search Date": dateObj, "Results": selectionList};
+    hist.writeFunc(historyArr);
 }
 
 
@@ -33,6 +44,13 @@ const searchCategory = async (args) => {
 const searchEntry = async (args) => {
     console.log("args", args);
     const result  = await api.getEntry(args.entry);
+    const historyEntry = [{
+        "name" : result['data']['name'],
+        "Category" : result['data']['category'],
+        "id" : result['data']['id']
+    }];
+    const historyArr = {"Number of results" : 1, "Search Date": dateObj, "Results": historyEntry};
+    hist.writeFunc(historyArr);
     console.log(result);
     return result;
 }

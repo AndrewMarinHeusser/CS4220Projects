@@ -1,100 +1,29 @@
 [
      {
-          "input": {
-               "category": "treasure",
-               "common_locations": [
-                    "Greater Hyrule"
-               ],
-               "description": "This deposit contains quite a bit of luminous stone. Crack it open to get at the easily process rocks within.",
-               "drops": [
-                    "luminous",
-                    "flint"
-               ],
-               "id": 389,
-               "image": "https://botw-compendium.herokuapp.com/api/v2/entry/luminous_ore_deposit/image",
-               "name": "luminous ore deposit"
-          }
+          "Number of results": 1,
+          "Date": "2/23, 19:10",
+          "Results": [
+               {
+                    "name": "moblin",
+                    "Category": "monsters",
+                    "id": 108
+               }
+          ]
      },
      {
-          "category": "treasure",
-          "common_locations": [
-               "Greater Hyrule"
-          ],
-          "description": "This deposit contains a good deal of ore. Breaking the rock will yield rock salt, flint, and other minerals of varying value.",
-          "drops": [
-               "ruby",
-               "diamond",
-               "amber",
-               "sapphire",
-               "topaz",
-               "opal",
-               "rock salt",
-               "flint"
-          ],
-          "id": 387,
-          "image": "https://botw-compendium.herokuapp.com/api/v2/entry/ore_deposit/image",
-          "name": "ore deposit"
-     },
-     {
-          "category": "monsters",
-          "common_locations": null,
-          "description": "These Lizalfos have been influenced by Ganon's fiendish magic to become the strongest Lizalfos of all. They're called \"silver\" for their unique coloring and also to denote their rarity. Their purple pattern makes them even more distinct.",
-          "drops": [
-               "lizalfos horn",
-               "lizalfos talon",
-               "lizalfos tail",
-               "amber",
-               "opal",
-               "topaz",
-               "ruby",
-               "sapphire",
-               "diamond"
-          ],
-          "id": 120,
-          "image": "https://botw-compendium.herokuapp.com/api/v2/entry/silver_lizalfos/image",
-          "name": "silver lizalfos"
-     },
-     {
-          "category": "monsters",
-          "common_locations": [
-               "Hyrule Field"
-          ],
-          "description": "The Sheikah of ancient Hyrule developed this as a weapon to combat Ganon. Its six legs give it extraordinary mobility compared to most current vehicles, and its powerful laser provides far greater offensive capability than conventional weaponry. Destroying the legs severely reduces its mobility.",
-          "drops": [
-               "ancient screw",
-               "ancient spring",
-               "ancient gear",
-               "ancient shaft",
-               "ancient core",
-               "giant ancient core"
-          ],
-          "id": 125,
-          "image": "https://botw-compendium.herokuapp.com/api/v2/entry/guardian_stalker/image",
-          "name": "guardian stalker"
-     },
-     {
-          "category": "monsters",
-          "common_locations": [
-               "Eldin Canyon",
-               "Gerudo Highlands"
-          ],
-          "description": "This octopus-like species of monster lives in volcanic regions. When they inhale, they're preparing to spit out flaming rocks but have been known to suck up weapons or bombs in the same breath.",
-          "drops": [
-               "octorok tentacle",
-               "octo balloon",
-               "octorok eyeball"
-          ],
-          "id": 94,
-          "image": "https://botw-compendium.herokuapp.com/api/v2/entry/rock_octorok/image",
-          "name": "rock octorok"
-     },
-     {
-          "category": "monsters",
-          "common_locations": null,
-          "description": "The Malice has given these Bokoblin skulls a sort of life. Devoid of any intelligence the Bokoblin it once belonged to may have had, these pitiful things now exist only to attack anything that gets too close.",
-          "drops": [],
-          "id": 156,
-          "image": "https://botw-compendium.herokuapp.com/api/v2/entry/cursed_bokoblin/image",
-          "name": "cursed bokoblin"
+          "Number of results": 2,
+          "Date": "2/23, 19:10",
+          "Results": [
+               {
+                    "name": "rock octorok",
+                    "Category": "monsters",
+                    "id": 94
+               },
+               {
+                    "name": "moblin",
+                    "Category": "monsters",
+                    "id": 108
+               }
+          ]
      }
 ]
